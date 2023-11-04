@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Codsoft Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="oprt" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button id="side" onclick="appendToDisplay('7')">7</button>
+            <button id="side" onclick="appendToDisplay('8')">8</button>
+            <button id="side" onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('+')">+</button>
+
+            <button id="side" onclick="appendToDisplay('4')">4</button>
+            <button id="side" onclick="appendToDisplay('5')">5</button>
+            <button id="side" onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+
+            <button id="side" onclick="appendToDisplay('1')">1</button>
+            <button id="side" onclick="appendToDisplay('2')">2</button>
+            <button id="side" onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('*')">*</button>
+
+            <button id="side" onclick="appendToDisplay('0')">0</button>
+            <button id="side" onclick="appendToDisplay('00')">00</button>
+            <button id="side" onclick="appendToDisplay('.')">.</button>
+           
+            <button onclick="appendToDisplay('/')">/</button>
+            <button id="wide" class="btn" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
